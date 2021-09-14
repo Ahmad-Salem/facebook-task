@@ -99,7 +99,7 @@ class MyHomePage extends StatelessWidget {
               return SingleChildScrollView(
                 child: Column(children: postsItems.map(
                       (postData) => PostItem(Example.reactions,postData.post_id, postData.post_user_name, postData.post_date,
-                          postData.post_photo, postData.post_likes, postData.post_comments),
+                          postData.post_photo,postData.post_photos,postData.post_text, postData.post_likes, postData.post_comments),
                 )
                     .toList(),),
               );
